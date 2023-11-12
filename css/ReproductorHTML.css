@@ -1,0 +1,65 @@
+h2 {
+  text-align: center;
+  vertical-align: middle;
+  color: #0069c0;
+}
+
+.h2max {
+  opacity: 0;
+}
+
+body {
+  background-color: #a1cffb
+}
+
+#video_container {
+  position: relative;
+  margin: auto;
+  width: 50%;
+}
+
+#video {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+.fullvideo {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}
+img {
+  width: 20px;
+}
+
+#controles {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.controlesmax {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 85%;
+}
+
+.visible {
+  display: block !important;
+}
+
+#progreso {
+  text-align: center;
+  margin: auto;
+}
+
+#barprogreso {
+  width: 80%;
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de video</title>
+    <link rel="stylesheet" href="css\ReproductorHTML.css">
+</head>
+
+<body>
+    <section id="repvideo">
+        <h2 id="titulo">Reproductor de video</h2>
+        <div>
+            <div id="video_container"  onmouseover="mostrar()" onmouseout="ocultar()">
+                <video id="video" preload loop onclick="playVid()"
+                    poster="https://cdn.discordapp.com/attachments/1164587855956410368/1172108929841516544/image.png?ex=655f1e81&is=654ca981&hm=e21b153503eb75a29d990670f1fa695fbe61134d79490b70dae555f305272f11&">
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                </video>
+
+                <div id="controles_container">
+                    <div id="controles">
+                        <img id="-10" onclick="plus10(-10)" alt="boton de nenos diez"
+                            src="https://cdn.discordapp.com/attachments/1164587855956410368/1171877061980344442/izq.png?ex=655e468f&is=654bd18f&hm=332d5a34bbe0f6607bb7d19d19801ed793def34b3c156032411b3e54d5052784&">
+                        <img id="play" onclick="playVid()" alt="boton de play y pause"
+                            src="https://cdn.discordapp.com/attachments/1164587855956410368/1171877061485412463/play.png?ex=655e468f&is=654bd18f&hm=e2959d6ebd8efbb6c20afa38baf5efaf8e5377ea3b47b5b50459866315ac9d02&">
+                        <img id="+10" onclick="plus10(+10)" alt="boton de mas diez"
+                            src="https://cdn.discordapp.com/attachments/1164587855956410368/1171877061732859985/der.png?ex=655e468f&is=654bd18f&hm=3b66e3e8dedb6bb346534d74d9372239649e19a5ce9a254fef269cf59617cd18&">
+                        <img id="pantallafull" onclick="max()"
+                            src="https://cdn.discordapp.com/attachments/1164587855956410368/1171898904724381797/full-screen.512x512.png?ex=655e5ae7&is=654be5e7&hm=d4ca23c401d08aeda9b7cf180d3f2490f728fdf76006c4a4dcffe4b7b912f6fe&"
+                            alt=""> <input type="range" onmouseover="mostrar()" value="0" onclick="barrapro(value)"
+                            id="barprogreso">
+                    </div>
+                    <div id="progreso">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/ReproductorHTML.js"></script>
+</body>

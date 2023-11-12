@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Dislexia</title>
+ <!--Enlace directo de Internet para trabajar con la fuente OpenDyslexic sin descargarla-->
+ <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/opendyslexic" type="text/css"/>
+ <meta charset="utf-8">
+ </head>
+ <body>
+ <!--Parte HMTL-->
+ <p id="parr">Es muy importante cuando desarrolles productos tener en cuenta que puedes ayudar a otras <br>
+ personas con dificultades. En este caso puedes facilitar la lectura a una persona disléxica.</p>
+ <button onclick="dislex()">Para disléxicos</button>
+ <button onclick="nodislex()">Para no disléxicos</button>
+ <!--Parte Javascript-->
+ <script type="text/javascript">
+ let parrafo = document.getElementById("parr");
+ function dislex() {
+ parrafo.setAttribute("style", "font-family: OpenDyslexic3Regular; font-weight: normal; font-style: normal;");
+ }
+ function nodislex() {
+ parrafo.setAttribute("style", "font-family: initial; font-weight: normal; font-style: normal;");
+ }
+ </script>
+ </body>
+</html>
